@@ -1,0 +1,66 @@
+import photo from '../../assets/photoUser.png'
+export const dataUsers = [{
+    id: 1,
+    photo: photo,
+    table: '50W',
+    sent: '10:45PM',
+    average: '3.0',
+    negative: ['Negavive tag name', 'Negavive tag name', 'Negavive tag name', 'Negavive tag name'],
+    time: '10 - 20 minutes wait',
+    drink: 'No drink',
+    status: 'LOSS',
+    button: true,
+    solution: []
+},
+{
+    id: 2,
+    photo: photo,
+    table: '50W',
+    sent: '10:45PM',
+    average: '4.7',
+    negative: ['Negavive tag name', 'Negavive tag name'],
+    time: '0 - 5 minutes wait',
+    drink: 'With drink',
+    status: 'WIN!',
+    button: false,
+    solution: ['Name solution', 'Name solution']
+},
+{
+    id: 3,
+    photo: photo,
+    table: '50W',
+    sent: '10:45PM',
+    average: '4.7',
+    negative: ['Negavive tag name', 'Negavive tag name', 'Negavive tag name', 'Negavive tag name'],
+    time: '0 - 5 minutes wait',
+    drink: 'With drink',
+    status: 'WIN!',
+    button: false,
+    solution: ['Name solution']
+},
+{
+    id: 4,
+    photo: photo,
+    table: '50W',
+    sent: '10:45PM',
+    average: '4.7',
+    negative: ['Negavive tag name', 'Negavive tag name', 'Negavive tag name', 'Negavive tag name'],
+    time: '0 - 5 minutes wait',
+    drink: 'With drink',
+    status: 'WIN!',
+    button: false,
+    solution: ['Name solution']
+},
+{
+    id: 5,
+    photo: photo,
+    table: '50W',
+    sent: '10:45PM',
+    average: '4.7',
+    negative: ['Negavive tag name', 'Negavive tag name', 'Negavive tag name', 'Negavive tag name'],
+    time: '0 - 5 minutes wait',
+    drink: 'With drink',
+    status: 'WIN!',
+    button: false,
+    solution: ['Name solution']
+}];

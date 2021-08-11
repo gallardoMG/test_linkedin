@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './normalize.css';
+import TodayActivity from './containers/TodayActivity/index'
+import Header from './containers/Header/index';
+import { MainWrapper, ScoreLeader, Container } from './AppElements';
+import Score from './containers/Score/index'
+import LeaderBoard from './components/LeaderBoard/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainWrapper>
+      <Header />
+      <Container>
+        <ScoreLeader>
+          <Score />
+          <LeaderBoard />
+        </ScoreLeader>
+        <TodayActivity />
+      </Container>
+    </MainWrapper>
   );
 }
 
