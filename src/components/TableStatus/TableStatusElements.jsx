@@ -43,7 +43,7 @@ export const Line = styled.div`
 export const Circle = styled.p`
   position: relative;
   right: 1.2rem;
-  top: 0.95rem;
+  top: 2rem;
   border-radius: 50%;
   width: 0.8rem;
   height: 0.8rem;

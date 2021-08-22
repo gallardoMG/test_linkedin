@@ -14,13 +14,17 @@ export const ContainerActivity = styled.section`
     display: none;
   }
 `;
-export const HeaderTable = styled.table`
+export const HeaderTable = styled.tr`
   border-radius: 20px 20px 0 0;
   background-color: #04243c;
-  padding-left: 10rem;
+  padding-left: 9.4rem;
+  width: 100%;
   display: grid;
   color: white;
-  grid-template-columns: 9.7rem 10rem 10.5rem auto;
+  grid-template-columns: 9.9rem 10rem 10.5rem 0.5rem;
+  td {
+    padding: 0.5rem 0;
+  }
 `;
 export const Info = styled.div`
   padding: 0 1rem;

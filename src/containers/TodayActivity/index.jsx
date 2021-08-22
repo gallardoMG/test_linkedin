@@ -10,7 +10,7 @@ import {
 } from './TodayActivityElements';
 
 const TodayActivity = () => {
-  const [data, setData] = useState(dataUsers);
+  const [data] = useState(dataUsers);
   const list = () =>
     data.map(el => (
       <TableStatus
@@ -36,12 +36,16 @@ const TodayActivity = () => {
           Sort by: <Color>Time sent</Color>
         </p>
       </Info>
-      <HeaderTable>
-        <p>Info</p>
-        <p>Rating</p>
-        <p>Tag</p>
-        <p>Status</p>
-      </HeaderTable>
+      <table>
+        <thead>
+          <HeaderTable>
+            <td>Info</td>
+            <td>Rating</td>
+            <td>Tag</td>
+            <td>Status</td>
+          </HeaderTable>
+        </thead>
+      </table>
       <ContainerActivity>{list()}</ContainerActivity>
     </Wraper>
   );

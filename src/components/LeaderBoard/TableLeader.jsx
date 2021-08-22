@@ -13,13 +13,13 @@ const TableLeader = ({ photo, today, week, id }) => {
       <Table>
         <tbody>
           <tr>
-            <td align='right' valign='top'>
+            <td align='right'>
               <ContainerMedal>
                 {id === 1 ? (
                   <i
                     className='fas fa-award'
                     id={id}
-                    style={{ color: '#efb810' }}
+                    style={{ color: '#D4AF37' }}
                   />
                 ) : id === 2 ? (
                   <i
@@ -36,9 +36,9 @@ const TableLeader = ({ photo, today, week, id }) => {
                 ) : (
                   <EndPositions>{id}</EndPositions>
                 )}
+                <img src={photo} alt='user' />
               </ContainerMedal>
-              <img src={photo} alt='Photo user' />
-              <p>Name</p>
+              Name
             </td>
             <td align='center'>
               <EidtText>{today[0]}</EidtText>

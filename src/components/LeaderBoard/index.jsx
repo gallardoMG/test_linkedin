@@ -10,7 +10,7 @@ import { dataLeader } from './data';
 import TableLeader from './TableLeader';
 
 const LeaderBoard = () => {
-  const [data, setData] = useState(dataLeader);
+  const [data] = useState(dataLeader);
   const listData = () =>
     data.map(el => (
       <TableLeader

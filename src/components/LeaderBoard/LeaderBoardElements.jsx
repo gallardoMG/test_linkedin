@@ -14,45 +14,43 @@ export const Info = styled.div`
   border-radius: 20px 20px 0 0;
   padding-left: 3rem;
   background-color: #04243c;
-  grid-template-columns: 4.5rem 6rem auto;
+  grid-template-columns: repeat(3, 1fr);
 `;
 
 export const ContainerTable = styled.div`
   background-color: #304152;
   overflow: scroll;
-  height: 100%;
+  height: 80%;
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
 export const Table = styled.table`
-  width: 100%;
   td {
-    /* border: 1px solid white; */
-    width: 33%;
+    width: 30%;
   }
+  width: 100%;
 `;
 
-export const EndPositions = styled.p`
+export const EndPositions = styled.span`
   width: 1rem;
   height: 1rem;
   border: 1px solid #ebebeba2;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #ebebeba2;
+  margin-right: 0.5rem;
+  display: grid;
+  place-content: center;
 `;
 
 export const ContainerMedal = styled.div`
-  position: relative;
-  right: 3.5rem;
-  top: 2rem;
+  justify-content: center;
+  display: flex;
   i {
-    font-size: 1.5rem;
-    /* color: ${({ id }) =>
-      id === 1 ? '#efb810' : id === 2 ? '#e3e4e5' : '#CD7F32'}; */
+    font-size: 2rem;
+    padding-right: 0.5rem;
   }
 `;
 export const EidtText = styled.span`
